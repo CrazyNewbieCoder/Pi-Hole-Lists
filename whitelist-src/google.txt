@@ -1,0 +1,11 @@
+connectivitycheck.android.com
+android.clients.google.com
+clients3.google.com
+googleapis.l.google.com
+gstaticadssl.l.google.com
+video-stats.l.google.com
+firestore.googleapis.com
+reminders-pa.googleapis.com
+connectivitycheck.gstatic.com
+csi.gstatic.com
+s.youtube.com

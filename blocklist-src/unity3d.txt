@@ -1,0 +1,14 @@
+check.unity.cn
+cdp.cloud.unity.cn
+ae.iads.unity3d.com
+gw-is.iads.unity3d.com
+gw-rv.iads.unity3d.com
+html-uap.iads.unity3d.com
+icon-uap.iads.unity3d.com
+img-dyn-uap.iads.unity3d.com
+o.iads.unity3d.com
+o-pxt.iads.unity3d.com
+vid-uap.iads.unity3d.com
+gw.mediation.unity3d.com
+o-sdk.mediation.unity3d.com
+operate-sdk-telemetry.unity3d.com

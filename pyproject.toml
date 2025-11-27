@@ -1,0 +1,7 @@
+[project]
+name = "pi-hole-lists"
+version = "0.1.0"
+description = "Pi-Hole whitelists and blocklists"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []

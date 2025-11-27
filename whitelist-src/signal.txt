@@ -1,0 +1,9 @@
+signal.org
+cdn.signal.org
+chat.signal.org
+contentproxy.signal.org
+api.directory.signal.org
+storage.signal.org
+ud-chat.signal.org
+updates2.signal.org
+www.signal.org

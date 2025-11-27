@@ -1,0 +1,8 @@
+appleid.apple.com
+captive.apple.com
+gsp1.apple.com
+itunes.apple.com
+gsp-ssl.ls.apple.com
+www.apple.com
+www.appleiphonecell.com
+gsp-ssl.ls-apple.com.akadns.net
