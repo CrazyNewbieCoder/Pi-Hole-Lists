@@ -29,9 +29,9 @@ def load_domains(path: Path) -> set:
     return domains
 
 
-def write_whitelist(domains, out_path="whitelist-test.txt"):
-    count = str(len(domains))
-    print(count)
+def write_whitelist(domains, out_path):
+    print(str(len(domains)))
+    print(out_path)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("#------------------------[UPDATE]------------------------\n")
         f.write("# Title: Whitelist\n")
@@ -47,5 +47,6 @@ def write_whitelist(domains, out_path="whitelist-test.txt"):
 if __name__ == "__main__":
     base_dir = Path(__file__).resolve().parent.parent
     whitelist = sorted(load_domains(Path.joinpath(base_dir, "whitelist-src")))
-    whitelist_path = str(Path.joinpath(base_dir, "whitelist.txt"))
+    Path.joinpath(base_dir, "release").mkdir(exist_ok=True)
+    whitelist_path = str(Path.joinpath(base_dir, "release", "whitelist.txt"))
     write_whitelist(whitelist, whitelist_path)
