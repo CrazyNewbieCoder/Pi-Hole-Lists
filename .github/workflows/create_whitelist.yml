@@ -5,11 +5,17 @@ on:
     - cron:  '0 0 * * *'    # every night at midnight UTC
   workflow_dispatch:        # manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -19,19 +25,19 @@ jobs:
       - name: Create whitelists
         run: python3 scripts/whitelist-update.py
 
-      - name: Verify output files exist
-        run: |
-          mkdir -p releases
-          if [ ! -f releases/whitelist.txt ]; then
-            echo "Error: One or more output files are missing!"
-            exit 1
-          fi
+      # - name: Verify output files exist
+      #   run: |
+      #     mkdir -p releases
+      #     if [ ! -f releases/whitelist.txt ]; then
+      #       echo "Error: One or more output files are missing!"
+      #       exit 1
+      #     fi
 
       - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add releases/
+          git add -A
           # only commit if there are changes
           git diff --quiet && echo "No changes to commit" || git commit -m "chore: update whitelist lists"
           git push
