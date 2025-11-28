@@ -47,6 +47,6 @@ def write_whitelist(domains, out_path):
 if __name__ == "__main__":
     base_dir = Path(__file__).resolve().parent.parent
     whitelist = sorted(load_domains(Path.joinpath(base_dir, "whitelist-src")))
-    Path.joinpath(base_dir, "release").mkdir(exist_ok=True)
-    whitelist_path = str(Path.joinpath(base_dir, "release", "whitelist.txt"))
+    # Path.joinpath(base_dir, "release").mkdir(exist_ok=True)
+    whitelist_path = str(Path.joinpath(base_dir, "whitelist.txt"))
     write_whitelist(whitelist, whitelist_path)
