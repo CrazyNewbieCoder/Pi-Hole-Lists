@@ -1,6 +1,6 @@
 #------------------------[UPDATE]------------------------
 # Title: Whitelist
-# Updated:: 2026-04-28 02:47:25 UTC
+# Updated:: 2026-04-29 02:46:48 UTC
 # Total number of whitelist urls: 65
 # -------------------------[URL]-------------------------
 android.clients.google.com
